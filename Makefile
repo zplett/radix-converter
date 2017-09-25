@@ -1,4 +1,4 @@
-all:frequency encode_bits decode_bits test tohex tooctal todecimal tobinary  
+OBall:frequency encode_bits decode_bits test tohex tooctal todecimal tobinary  
 
 frequency: frequency.c
 	gccx -g -o frequency frequency.c
@@ -46,4 +46,4 @@ tobinary.o: tobinary.c bits.h bits.c getnum.h getnum.c
 	gccx -g -c tobinary.c bits.c getnum.c 
 
 clean:
-	rm -f frequency encode_bits decode_bits test *.o
+	rm -f frequency encode_bits decode_bits test todecimal tobinary tohex tooctal *.o
